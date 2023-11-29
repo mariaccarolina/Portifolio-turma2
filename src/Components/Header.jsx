@@ -1,12 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {StyleHeader, Navegacao} from "../style/headerStyle"
 
 function Header() {
     return (
-        <header>
-            <Link to="/">Inicio</Link>
-            <Link> Sobre</Link>
-        </header>
+        <StyleHeader>
+            <nav>
+                <Navegacao>
+                    <li>
+                        <Link to="/">Inicio</Link>
+                    </li>
+                    <li>
+                        <Link to="/sobre"> Sobre</Link>
+                    </li>
+                    <li>
+                        <Link to="/projetos">Projetos</Link>
+                    </li>
+                </Navegacao>
+            </nav>
+        </StyleHeader>
     )
 }
 export default Header
